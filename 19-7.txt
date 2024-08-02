@@ -1,0 +1,325 @@
+1.In c student info
+#include <stdio.h>
+
+struct StudentData{
+    char *stu_name;
+    int stu_id;
+    int stu_age;
+};
+int main()
+{
+     struct StudentData student;
+
+     student.stu_name = "isha";
+     student.stu_id = 1234;
+     student.stu_age = 30;
+
+     printf("Student Name is: %s", student.stu_name);
+     printf("\nStudent Id is: %d", student.stu_id);
+     printf("\nStudent Age is: %d", student.stu_age);
+     return 0;
+}
+Output:
+Student Name is: isha
+Student Id is: 1234
+Student Age is: 30
+
+
+2.student
+import java.util.*;
+ class Student
+ {
+     int rollNo;
+     String firstName;
+     double percentage;
+     public void accept()
+     {
+         Scanner sc=new Scanner (System.in);
+         System.out.println("RollNo name per");
+         rollNo=sc.nextInt();
+         firstName=sc.next();
+         percentage=sc.nextDouble();
+     }
+     public void display()
+     {
+         System.out.println("RollNo:"+rollNo);
+         System.out.println("Name:"+firstName);
+         System.out.println("percentage:"+percentage);
+     }
+ }
+ public class Main
+ {
+ public static void main (String[] args)
+ {
+     Student student = new Student();
+     student.accept();
+     student.display();
+     
+     Student student1 = new Student();
+     student1.accept();
+     student1.display();
+ }
+ }
+
+Output:
+RollNo name per
+1
+meena
+87
+RollNo:1
+Name:meena
+percentage:87.0
+RollNo name per
+2
+isha
+87
+RollNo:2
+Name:isha
+percentage:87.0
+
+3.student information using array of object.
+import java.util.*;
+ class Student
+ {
+     int rollNo;
+     String firstName;
+     double percentage;
+     public void accept()
+     {
+         Scanner sc=new Scanner (System.in);
+         System.out.println("RollNo name per");
+         rollNo=sc.nextInt();
+         firstName=sc.next();
+         percentage=sc.nextDouble();
+     }
+     public void display()
+     {
+         System.out.println("RollNo:"+rollNo);
+         System.out.println("Name:"+firstName);
+         System.out.println("percentage:"+percentage);
+     }
+ }
+ public class Main
+ {
+ public static void main (String[] args)
+ {
+     int n,i;
+     Scanner sc=new Scanner(System.in);
+     System.out.println("enter size :");
+     n=sc.nextInt();
+     
+     Student []student = new Student[n];
+     for(i=0;i<n;i++)
+     {
+    student[i] = new Student();
+     student[i].accept();
+     student[i].display();
+     
+     }   
+ }
+ }
+Output:
+enter size :
+2
+RollNo name per
+1
+nirali
+78
+RollNo:1
+Name:nirali
+percentage:78.0
+RollNo name per
+2
+meena
+87
+RollNo:2
+Name:meena
+percentage:87.0
+
+4.Book
+import java.util.*;
+ class Book
+ {
+     int bookId;
+     String bookName;
+     String bookAuthor;
+     int bookPrice;
+     public void accept()
+     {
+         Scanner sc=new Scanner (System.in);
+         System.out.println("bookid  bookname bookauthor bookprice");
+        bookId =sc.nextInt();
+        bookName=sc.next();
+        bookAuthor=sc.next();
+        bookPrice= sc.nextInt();
+     }
+     public void display()
+     {
+         System.out.println("bookId:"+bookId);
+         System.out.println("bookName:"+bookName);
+         System.out.println("bookAuthor:"+bookAuthor);
+         System.out.println("bookPrice:"+bookPrice);
+     }
+ }
+ public class Main
+ {
+ public static void main (String[] args)
+ {
+     int n,i;
+     Scanner sc=new Scanner(System.in);
+     System.out.println("enter size :");
+     n=sc.nextInt();
+     
+     Book []book = new Book[n];
+     for(i=0;i<n;i++)
+     {
+     book[i] = new Book();
+     book[i].accept();
+     book[i].display();
+ }
+ }
+ }
+Output:
+enter size :
+1
+bookid  bookname bookauthor bookprice
+101
+ramayn
+valmiki
+4000
+bookId:101
+bookName:ramayn
+bookAuthor:valmiki
+bookPrice:4000
+
+5.Vehicle
+import java.util.*;
+ class Vehicle
+ {
+     int vehicleId;
+     String vehicleName;
+     String vehicleCompany;
+     String vehicleColor;
+     String vehicleOwner;
+     double vehiclePrice;
+     public void accept()
+     {
+         Scanner sc=new Scanner (System.in);
+         System.out.println("vehicleid ,vehicleName, vehicleCompany, vehicleColor, vehicleOwner ,vehiclePrice :");
+        vehicleId =sc.nextInt();
+        vehicleName=sc.next();
+        vehicleCompany=sc.next();
+        vehicleColor=sc.next();
+        vehicleOwner=sc.next();
+         vehiclePrice= sc.nextInt();
+     }
+     public void display()
+     {
+         System.out.println("vehicleId:"+vehicleId);
+         System.out.println("vehicleName:"+vehicleName);
+         System.out.println("vehicleCompany:"+vehicleCompany);
+         System.out.println("vehicleColor:"+vehicleColor);
+         System.out.println("vehicleOwner:"+vehicleOwner);
+         System.out.println("vehiclePrice:"+ vehiclePrice);
+     }
+ }
+ public class Main
+ {
+ public static void main (String[] args)
+ {
+     int n,i;
+     Scanner sc=new Scanner(System.in);
+     System.out.println("enter size :");
+     n=sc.nextInt();
+     
+     Vehicle []vehicle = new Vehicle[n];
+     for(i=0;i<n;i++)
+     {
+     vehicle[i] = new Vehicle();
+     vehicle[i].accept();
+     vehicle[i].display();
+ }
+ }
+ }
+Output:
+enter size :
+1
+Vehicleid, vehicleName ,vehicleCompany, vehicleColor, vehicleOwner ,vehiclePrice :
+201
+swift
+tata
+pink
+mr.tata
+160000
+vehicleId:201
+vehicleName:swift
+vehicleCompany:tata
+vehicleColor:pink
+vehicleOwner:mr.tata
+vehiclePrice:160000.0
+
+
+6.Employee
+import java.util.*;
+ class Employee
+ {
+     int employeeId;
+     String employeeName;
+     int employeeSalary;
+     String employeeDesignation;
+     public void accept()
+     {
+         Scanner sc=new Scanner (System.in);
+         System.out.println("employeeId, employeeName ,employeeSalary, employeeDesignation  : ");
+       employeeId =sc.nextInt();
+        employeeName=sc.next();
+         employeeSalary= sc.nextInt();
+         employeeDesignation=sc.next();
+     }
+     public void display()
+     {
+         System.out.println("employeeId:"+employeeId);
+         System.out.println("employeeName:"+employeeName);
+         System.out.println("employeeSalary:"+employeeSalary);
+         System.out.println("employeeDesignation:"+employeeDesignation);
+     }
+ }
+ public class Main
+ {
+ public static void main (String[] args)
+ {
+     int n,i;
+     Scanner sc=new Scanner(System.in);
+     System.out.println("enter size :");
+     n=sc.nextInt();
+     
+     Employee []employee = new Employee[n];
+     for(i=0;i<n;i++)
+     {
+     employee[i] = new Employee();
+     employee[i].accept();
+     employee[i].display();
+ }
+ }
+ }
+Output:
+enter size :
+2
+employeeId, employeeName ,employeeSalary, employeeDesignation  : 
+11
+nitya
+30000
+developer
+employeeId:11
+employeeName:nitya
+employeeSalary:30000
+employeeDesignation:developer
+employeeId, employeeName ,employeeSalary, employeeDesignation  : 
+22
+meera
+25000
+tester
+employeeId:22
+employeeName:meera
+employeeSalary:25000
+employeeDesignation:tester
